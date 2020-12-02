@@ -1,0 +1,25 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "Single Price Grid Component from frontendmentor.io challenges",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.css -o css/style.prefixed.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanideth/Single-Price-Grid-Component.git"
+  },
+  "author": "Sandro Bochorishvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanideth/Single-Price-Grid-Component/issues"
+  },
+  "homepage": "https://github.com/Sanideth/Single-Price-Grid-Component#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.0"
+  }
+}
