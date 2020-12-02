@@ -5,6 +5,9 @@
   --color-neutral-grayish-blue: hsl(218, 22%, 67%);
 }
 
+$bp-small: 39.75em; //bp at 636px
+$bp-smallest: 32em; //bp at 512px
+
 *,
 *::before,
 *::after {
@@ -19,4 +22,17 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-neutral-light-gray);
+}
+
+a,
+a:visited,
+a:link {
+  text-decoration: none;
 }

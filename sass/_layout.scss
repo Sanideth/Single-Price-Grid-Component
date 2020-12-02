@@ -1,0 +1,108 @@
+.grid {
+  display: grid;
+  grid-template-rows: 44.99% 55.1%;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  overflow: hidden;
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  &__heading {
+    grid-column: 1 / -1;
+  }
+
+  &__text-important {
+    color: var(--color-primary-bright-yellow);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__text-main {
+    font-size: 1.4rem;
+    color: var(--color-neutral-grayish-blue);
+    line-height: 1.6;
+  }
+
+  &__main-content {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  &__subscription-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 1 / 2;
+    background-color: var(--color-primary-cyan);
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / 1;
+    }
+  }
+
+  &__text-price {
+    font-size: 3rem;
+  }
+
+  &__text-price-details {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  &__span {
+    font-size: 1.3rem;
+    opacity: 0.5;
+    vertical-align: middle;
+    font-weight: 300;
+  }
+
+  &__subscription-reasons {
+    grid-column: 2 / -1;
+    background-color: rgba(41, 177, 175, 0.8);
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    opacity: 0.8;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  &__heading,
+  &__subscription-details,
+  &__subscription-reasons {
+    padding: 2.2em;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1.8em;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: var(--color-primary-cyan);
+
+  & a {
+    color: #fff;
+    font-style: italic;
+    transition: all 0.2s;
+
+    &:hover {
+      color: var(--color-neutral-grayish-blue);
+    }
+  }
+}
