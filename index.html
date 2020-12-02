@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
   
@@ -14,36 +16,55 @@
   
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="container">
+    <main class="grid">
+      <div class="grid__heading">
+        <h2 class="heading-secondary">Join our community</h2>
+        <p class="grid__text-important">30-day, hassle-free money back guarantee</p>
+        <p class="grid__text-main">Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <div class="grid__main-content">
+        <div class="grid__subscription-details">
+          <h3 class="heading-tertiary">Monthly Subscription</h3>
+          <p class="grid__text-price">&dollar;29<span class="grid__span">per month</span></p>
+          <p class="grid__text-price-details">Full access for less than &dollar;1 a day</p>
+          <a href="#" class="btn btn-signup">Sign Up</a>
+        </div>
+        <div class="grid__subscription-reasons">
+          <h3 class="heading-tertiary">Why Us</h3>
+          <ul class="grid__list">
+            <li class="grid__list-item">
+              <p class="grid__list-text">Tutorials by industry experts</p>
+            </li>
+            <li class="grid__list-item">
+              <p class="grid__list-text">Peer &amp; expert code review</p>
+            </li>
+            <li class="grid__list-item">
+              <p class="grid__list-text">Coding exercises</p>
+            </li>
+            <li class="grid__list-item">
+              <p class="grid__list-text">Access to our GitHub repos</p>
+            </li>
+            <li class="grid__list-item">
+              <p class="grid__list-text">Community forum</p>
+            </li>
+            <li class="grid__list-item">
+              <p class="grid__list-text">Flashcard decks</p>
+            </li>
+            <li class="grid__list-item">
+              <p class="grid__list-text">New videos every week</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
